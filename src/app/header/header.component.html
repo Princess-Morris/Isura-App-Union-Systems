@@ -1,0 +1,40 @@
+    <div class="header">
+        <div class="header_left">
+            <div class="logo">Isura</div>
+            
+            <div class="menu">
+                <div class="dash_board">Dashboard</div>
+                <div class="cases">Cases 
+                    <a nz-dropdown [nzDropdownMenu]="menu">
+                        dropdown
+                        <span nz-icon nzType="down"></span>
+                      </a>
+                      <nz-dropdown-menu #menu="nzDropdownMenu">
+                        <ul nz-menu nzSelectable>
+                          <li nz-menu-item>All Cases</li>
+                          <li nz-menu-item>Create a case</li>
+                          <li nz-menu-item>Reports</li>
+
+                        </ul>
+                      </nz-dropdown-menu>
+                </div>
+                <div class="change_request">Change Request</div>
+                <div class="setting">Setting</div>
+                <div class="partners">Partners</div>
+            </div>
+       </div>
+
+      <div class="header_right">
+        <div class="new_case"><a href="'">New Case</a></div>
+    
+        <div class="bell">Bell</div>
+        
+        <div class="super_admin">
+            <div class="sa_pic">SA</div>
+            <div class="sa_info">
+                <div class="super_admin">Super Admin</div>
+                <div class="isura">Isura</div>
+            </div>
+        </div>
+        
+    </div>

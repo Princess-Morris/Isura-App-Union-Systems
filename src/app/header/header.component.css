@@ -1,0 +1,83 @@
+.header{
+    background-color: #303368;
+    color: #F2DFC6;
+    font-size: 13px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo{
+    font-size: 30px;
+}
+
+.menu > div{
+    padding-right: 30px;
+}
+
+.header_left{
+ display: flex;
+justify-content: space-around;
+width: 60%;
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header_right{
+    display: flex;
+    width: 40%;
+    align-items: center;
+    /* background-color: blue; */
+    padding-left: 70px;
+}
+
+.header_right > div{
+    padding-right: 20px;
+}
+
+.sa_pic{
+    background-color: #0A6EBD;
+    border-radius: 50px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #FFFFFF;
+    margin-left: auto;
+}
+
+ .isura{
+    font-size: 11px;
+    padding-right: 50px;
+    /* background-color: orange; */
+}
+
+.super_admin{
+    display: flex;
+    /* padding-left: 0px; */
+    align-items: center;
+    justify-content: center;
+    padding-right: 5px;
+    /* background-color: darkcyan; */
+}
+
+
+.sa_info{
+    display: flex;
+    flex-direction: column;
+    /* background-color: red; */
+    align-items: center;
+    justify-content: center;
+    line-height: 1.2rem;
+    width: 100px;
+    padding-right: 10px;
+}

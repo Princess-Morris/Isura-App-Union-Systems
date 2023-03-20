@@ -1,0 +1,59 @@
+
+<div class="table_style">
+
+    <h3>All Cases</h3>
+
+    <hr>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+            <div class="checker_checker">
+                <input type="checkbox">
+            </div>
+            </th>
+            <th>Severity</th>
+            <th>Case Number</th>
+            <th>Case Title</th>
+            <th>Date</th>
+            <th>Product</th>
+            <th>Support</th>
+            <th>Status</th>
+        </tr>
+    </thead>
+    <tbody *ngFor="let list of lists">
+        <tr>
+            <td>
+                <div class="input"> 
+                    <input type="checkbox">
+                </div>
+            </td>
+            <td>
+              
+                    <p class="severity">{{ list.severity }}</p>
+            </td>
+            <td> 
+                <div class="id_number">
+                    <a href="">{{ list.caseNumber }}</a>
+                </div>
+             </td>
+            <td>{{ list.caseTitle}}</td>
+            <td>{{ list.date }}</td>
+            <td>{{ list.product }}</td>
+            <td>
+                <div class="id_pic">
+                    <p class="{{ list.product}}"></p>
+                    <p *ngFor="let support of list.support" class="id_D">{{support}}</p>
+                </div>
+            </td>
+            <td>{{ list.status}}</td>
+        </tr>
+        <!-- <i class=" fa-ellipsis-h" aria-hidden="true"></i> -->
+    
+       
+    </tbody>
+</table>
+
+
+</div>
